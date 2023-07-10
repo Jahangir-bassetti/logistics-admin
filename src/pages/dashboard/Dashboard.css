@@ -1,0 +1,122 @@
+.flex-container {
+  display: flex;
+  overflow: auto;
+}
+.main-content {
+  margin: 0.8rem 0.5rem 0 0.5rem;
+  width: 100%;
+  height: 88vh;
+  font-size: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+.chart {
+  display: flex;
+  margin: 2rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.pichart {
+  width: 45%;
+  height: 40vh;
+  background: #f5faf4;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.barchart {
+  width: 45%;
+  height: 40vh;
+  background: #f5faf4;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.consignment {
+  margin: 5rem;
+}
+
+h6 {
+  float: left;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0px;
+  margin-left: 5rem;
+  color: #000000;
+}
+.consignment-table {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .flex-container {
+    left: 60px;
+    width: calc(100%);
+  }
+}
+@media (min-width: 992px) {
+  .chart {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.small-box.box {
+  background: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.29);
+}
+
+.small-box > .small-box-footer {
+  background: #0e76bc !important;
+  padding: 10px 0 !important;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+    color: rgba(255,255,255,.8);
+    display: block;
+    padding: 3px 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.small-box .icon {
+  color: #0e76bc !important;
+  font-size: 40px;
+}
+.small-box .icon > i.fa,
+.small-box .icon > i.fab,
+.small-box .icon > i.far,
+.small-box .icon > i.fas,
+.small-box .icon > i.glyphicon,
+.small-box .icon > i.ion {
+  font-size: 50px;
+}
+
+.small-box .icon {
+  color: #0e76bc !important;
+  font-size: 40px;
+  position: relative;
+  float: right;
+  width: 80px;
+}
+.small-box .icon > img {
+  font-size: 90px;
+  position: absolute;
+  right: 15px;
+  top: -100px;
+  transition: all 0.3s linear;
+  width: 100%;
+}
+
+.small-box .icon img:hover {
+	transform: scale(1.2); 
+}
+.small-box>.inner {
+    padding: 10px;
+}
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+
+}

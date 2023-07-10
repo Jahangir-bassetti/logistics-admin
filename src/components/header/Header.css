@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab:wght@900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+.header {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 3.5rem;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 2px 6px 3px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0px 2px 6px 3px rgb(0 0 0 / 10%);
+    box-shadow: 0px 2px 6px 3px rgb(0 0 0 / 10%);
+    position: sticky;
+}
+.header-wraper {
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifi {
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0.5rem;
+    color: #0c3a30;
+}
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    outline: 2.5px solid #0c3a30;
+    background-color: #ffffff;
+    outline-offset: 2.5px;
+    cursor: pointer;
+}
+.header-profile {
+    height: 2.5rem;
+    width: 2rem;
+    margin-top: 1rem;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.header-right button {
+    position: relative;
+    display: flex;
+    margin-right: 1rem;
+    background: none;
+    border: none;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    bottom: 4px;
+}
+.icon-badge {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #ffc107;
+    color: black;
+    top: 0.6rem;
+    right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    font-size: 8px;
+}
+form {
+    border-radius: 25px;
+    position: relative;
+}
+.header-left form {
+    display: flex;
+    text-align: center;
+    margin-left: 9rem;
+}
+
+.header-left button {
+    position: absolute;
+    top: 0px;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none !important;
+    font-size: 1px;
+    color: #728c88;
+}
+.submenu-wrapper {
+    position: absolute;
+    top: 100%;
+    right: 3%;
+    width: 13%;
+    height: 35%;
+}
+.submenu-wrapper .openMenu {
+    max-height: 400px;
+}
+.submenu {
+    padding: 0.5rem;
+    margin: 5px;
+    border-radius: 1.5rem;
+    background: #ffffff;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.23);
+}
+
+.upper-arrow {
+    height: 2.4rem;
+    width: 2.9rem;
+    background-color: white;
+    position: absolute;
+    right: 0.3rem;
+    clip-path: polygon(100% 0, 100% 38%, 100% 100%, 0 100%, 2% 100%);
+    top: -0.9rem;
+}
+.user-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #18371e;
+}
+.user-info h4 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.user-info .image-container {
+    height: 3rem;
+    width: 3rem;
+}
+.user-info .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    outline: 2.5px solid #0c3a30;
+    background-color: #ffffff;
+    outline-offset: 2.5px;
+    cursor: pointer;
+}
+
+.user-info .text-container h3 {
+    text-align: center;
+    color: #ff4343;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-block-end: 0em;
+}
+.user-info .text-container span {
+    font-size: 1rem;
+    opacity: 0.6;
+}
+.user-info .text-container p {
+    color: #0c3a30;
+    font-weight: 300;
+    font-size: 22px;
+    list-style: none;
+    margin-left: 10px;
+}
+.submenu-link {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-left: 2.5rem;
+}
+.submenu-link p {
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+.logout {
+    border-bottom: 1px solid #304742;
+    width: 100%;
+}
+.logout-btn {
+    width: 100%;
+    height: 3rem;
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.line1 {
+    border-bottom: 1px solid #dfe2e2;
+    width: 100%;
+}
+.menu-icon {
+    margin-left: 6rem;
+    transition: 0.3s ease-in;
+}
+.menuIcon{
+    font-size: 2rem;
+}

@@ -1,0 +1,38 @@
+.main-container-withsidebar {
+    display: grid;  
+    grid-template-columns:  15.5rem  calc(100% - 15.5rem);    
+    transition: 0.3s ease-out;
+  }
+.main-container-withoutsidebar {
+    display: grid;
+    grid-template-columns:  5rem  calc(100% - 5rem);
+    transition: 0.3s ease-out;
+}
+body {
+    margin: 0px;
+}
+
+.bg-global{
+    background-color: #f6f5ff;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -5;
+}
+.bg-loader {
+    background-color: #ffffff80;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.danger-warning{
+    font-size: small;
+    color: red;
+}

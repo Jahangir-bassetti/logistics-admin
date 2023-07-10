@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab:wght@900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+.consignment-page{
+     
+    background-color: #fff;
+    /* margin: 0 1rem 1rem 1rem; */
+    margin: 0.8rem 0.5rem 0 0.5rem ;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.consignment-title h6{
+    float: left;
+font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+margin: 0px;
+margin-left: 3rem;
+margin-top: 1.5rem;
+color: #000000;
+}

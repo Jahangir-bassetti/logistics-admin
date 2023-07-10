@@ -1,0 +1,15 @@
+.activeData{
+    text-align: left;
+}
+.activeData .icon{
+   margin-right: 0.2rem;
+}
+@media screen and (max-width:1300px) {
+    .activeData span{
+        display: none;  
+    }
+ 
+    .activeData .icon{
+        margin-right: 0rem;
+     }
+}

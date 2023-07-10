@@ -1,0 +1,85 @@
+
+  .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: #fefefe;
+    /* margin: 20% auto; */
+    padding: 18px;
+    border: 1px solid #888;
+    /* width: 100%; */
+    max-width: 25rem;
+    display: block;
+    z-index: 1;
+
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .deleteBtn{
+    width: 100px;
+    height: 40px;
+    background-color: #e10b0b;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .deleteBtn:hover,
+  .deleteBtn:focus {
+    background-color: rgb(156, 5, 5);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .cancelBtn{
+    width: 100px;
+    height: 40px;
+    background-color:#888;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .cancelBtn:hover,
+  .cancelBtn:focus {
+    background-color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .deleteBtn .cancelBtn{
+    display: inline-block;
+  }
+  .modal-title {
+    top: 0;
+    text-align: left;
+   color: rgb(7, 15, 7);
+  }
+  .close{
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    position:absolute;
+    border: none;
+    background: none;
+    top:0;
+    right:0;
+  }
+  .modal-body{
+    text-align: center;
+  }
+  .cancelBtn{
+    margin-left: 3rem;
+  }
