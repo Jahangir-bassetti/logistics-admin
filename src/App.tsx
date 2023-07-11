@@ -110,7 +110,7 @@ function App(): JSX.Element {
                     <Route path='trip' element={<ProtectedRoute component={Trip}></ProtectedRoute>}></Route>
                     <Route path='bill' element={<ProtectedRoute component={Bill}></ProtectedRoute>}></Route>
                     <Route path='report' element={<ProtectedRoute component={Report}></ProtectedRoute>}></Route>
-                    <Route path='warehouse' element={<ProtectedRoute component={Inventory}></ProtectedRoute>}></Route>
+                    <Route path='inventory' element={<ProtectedRoute component={Inventory}></ProtectedRoute>}></Route>
                     <Route path='/account-settings/add-page' element={<ProtectedRoute component={AddNewPage}></ProtectedRoute>}></Route>
                     <Route
                         path='/user/employee/create'

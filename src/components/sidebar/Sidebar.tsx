@@ -6,9 +6,32 @@ import { CSSTransition } from "react-transition-group";
 import { Link, useLocation } from "react-router-dom";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { SidebarProps, SidebarItem } from "../../interface/SidebarInterface";
 
-export const Sidebar: React.FC<SidebarProps> = (props) => {
+
+interface SidebarProps {
+  isOpen: {
+      isBtnOpen: boolean;
+      currentValue: boolean;
+    };
+    setSideBarOpen: React.Dispatch<
+      React.SetStateAction<{
+        isBtnOpen: boolean;
+        currentValue: boolean;
+      }>
+    >;
+    toggleSidebar: () => void;
+};
+
+interface SidebarItem {
+  id: number;
+  title: string;
+  link: string;
+  active: string;
+  icon: any;
+  children?: SidebarItem[];
+}
+
+  export const Sidebar: React.FC<SidebarProps> = (props) => {
   const [collapseSideMenu, setCollapseSideMenu] = useState<number>(0);
   const [currentPath, setCurrentPath] = useState<string>("pagelist");
   const dashboardRef = useRef<HTMLSpanElement>(null);
@@ -112,9 +135,9 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
     },
     {
       id: 7,
-      title: "Inventary",
-      link: "/warehouse",
-      active: "/warehouse",
+      title: "Inventory",
+      link: "/inventory",
+      active: "/inventory",
       children: [],
       icon: "warehouse",
     },
@@ -127,7 +150,7 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
       icon: "bug",
     },
   ];
-
+  
   useEffect(() => {
     setCurrentPath(location.pathname);
   }, [location]);
@@ -136,7 +159,7 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
     if (collapseSideMenu !== sideMenu) setCollapseSideMenu(sideMenu);
     else setCollapseSideMenu(0);
   };
-
+  
   return (
     <div className="sidebar">
       <div
@@ -145,17 +168,17 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
         onMouseEnter={() =>
           !props.isOpen.isBtnOpen
             ? props.setSideBarOpen({
-              isBtnOpen: false,
-              currentValue: true,
-            })
+                isBtnOpen: false,
+                currentValue: true,
+              })
             : null
         }
         onMouseLeave={() =>
           !props.isOpen.isBtnOpen
             ? props.setSideBarOpen({
-              isBtnOpen: false,
-              currentValue: false,
-            })
+                isBtnOpen: false,
+                currentValue: false,
+              })
             : null
         }
       >
@@ -171,7 +194,7 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
           </div>
           <div style={{ maxHeight: "90vh", overflow: "auto" }}>
             <ul className="sidebar-list">
-              {sideBarArray.map((item: any, index) => {
+              {sideBarArray.map((item:any, index) => {
                 return item.children.length < 1 ? (
                   <Link to={item.link} key={index}>
                     <li
@@ -204,7 +227,7 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
                       onClick={() => handleSidebarMenus(item.id)}
                       className={
                         currentPath === item.active ||
-                          currentPath.includes(item.active)
+                        currentPath.includes(item.active)
                           ? "sidebar-btn-active"
                           : "sidebar-btn"
                       }
@@ -250,7 +273,7 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
                       unmountOnExit
                     >
                       <div ref={submenu} className="collapsed-submenu">
-                        {item.children.map((obj: any, index: any) => {
+                        {item.children.map((obj:any, index:any) => {
                           return (
                             <Link to={obj.link} key={index}>
                               {" "}

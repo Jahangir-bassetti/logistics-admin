@@ -14,8 +14,20 @@ import { Socket } from 'socket.io-client';
 import { MyModal } from "../../../components/modal/deletemodal/DeleteModal";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import UserData from "../../../interface/DriverInterface";
 
+
+interface UserData {
+  Address: ReactNode;
+  Email: ReactNode;
+  ContactNo: ReactNode;
+  _id: string;
+  sName?: string;
+  sEmail?: string;
+  aPhoneNo?: number;
+  sPresentAddress?: string;
+  bIsActive: boolean;
+  bIsApproved: boolean;
+}
 
 export const Driver: React.FC = () => {
   const [search, setSearch] = useState("");
@@ -271,6 +283,7 @@ export const Driver: React.FC = () => {
                           </th>
                         </tr>
                       </thead>
+                      {userData.length>0 ? (
                       <tbody className="bg-tbody">
                         {currentItems
                           .filter((item) => {
@@ -308,7 +321,7 @@ export const Driver: React.FC = () => {
                                 <Button
                                                                         variant={item.bIsApproved  ? 'success':'secondary'}
                                                                         size='sm'
-                                                                        className='activeData'                                                                     
+                                                                        className='activeData ms-1'                                                                     
                                                                         onClick={()=>approvedStatus(item,item.bIsApproved)} 
                                                                     >
                                                                         {item.bIsApproved ?<FontAwesomeIcon icon={faCircleCheck}  color='white' className='icon'/> : 
@@ -319,7 +332,7 @@ export const Driver: React.FC = () => {
                                 <Button
                                                                         variant={item.bIsActive  ? 'primary':'secondary'}
                                                                         size='sm'
-                                                                        className='activeData'                                                                     
+                                                                        className='activeData ms-1'                                                                     
                                                                         onClick={()=>updateStatus(item._id,item.bIsActive)} 
                                                                     >
                                                                         {item.bIsActive ?<FontAwesomeIcon icon={faCircleCheck}  color='white' className='icon'/> : 
@@ -330,7 +343,7 @@ export const Driver: React.FC = () => {
                                   <Button
                                     variant="success"
                                     size="sm"
-                                    className=" activeData"
+                                    className=" activeData ms-1"
                                   >
                                     <FontAwesomeIcon
                                       icon={faEdit}
@@ -354,7 +367,11 @@ export const Driver: React.FC = () => {
                               </tr>
                             );
                           })}
-                      </tbody>
+                      </tbody>) :isLoading?null: (
+                         <tbody className="bg-tbody">
+                         <tr  style={{height: '10rem'}} className="notfound"><th colSpan={6}>No Records found</th></tr>
+                       </tbody>
+                      )}
                     </Table>
                     {isLoading ? (
                       <div

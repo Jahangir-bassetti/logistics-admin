@@ -1,7 +1,11 @@
 import React from 'react';
 import './DeleteModal.css';
-import MyModalProps from '../../../interface/DeleteModalInterface';
 
+interface MyModalProps {
+  id: string | false;
+  setShowModal: React.Dispatch<React.SetStateAction<string | false>>;
+  action: (id: string) => void;
+}
 
 export const MyModal: React.FC<MyModalProps> = ({ id, setShowModal, action }) => {
   const closeModal = () => {

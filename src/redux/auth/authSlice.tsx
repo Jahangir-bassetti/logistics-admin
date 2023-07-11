@@ -1,5 +1,14 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { AuthState, initialState } from '../../interface/authSliceInterface'
+
+interface AuthState {
+  user: null | any;
+  token: null | any;
+}
+
+const initialState: AuthState = {
+  user: null,
+  token: null,
+}
 
 export const authSlice = createSlice({
   name: 'auth',

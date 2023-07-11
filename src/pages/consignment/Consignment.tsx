@@ -275,6 +275,14 @@ export const Consignment: React.FC = () => {
                           >
                             Status
                           </th>
+                          <th
+                            className="not-exported sorting_disabled"
+                            rowSpan={1}
+                            colSpan={1}
+                            aria-label="Action"
+                          >
+                            Action
+                          </th>
                         </tr>
                       </thead>
                       <tbody className="bg-tbody">
@@ -333,6 +341,9 @@ export const Consignment: React.FC = () => {
                                     ? item.sBillingDetails
                                     : "----"}
                                 </td>
+                                <td>
+                                    {item.eStatus ? item.eStatus : "----"}
+                                  </td>
                                 <td>
                                   <Link to="/a">
                                   <Button

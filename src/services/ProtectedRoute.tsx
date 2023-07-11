@@ -1,7 +1,10 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { ProtectedRouteProps, RootState } from '../interface/ProtectedRouteInterface';
+
+interface ProtectedRouteProps {
+  component: React.ComponentType;
+}
 
 export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ component: Component }) => {
   let localData = JSON.parse(localStorage.getItem('user') || 'null');
@@ -11,4 +14,13 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ component: Compo
   const isAuth = (auth?.token && auth?.user) || (localData && localDataToken);
   return isAuth ? <Component /> : <Navigate to="/login" />;
 };
+
+interface RootState {
+  auth: {
+    value?: {
+      token?: string;
+      user?: string;
+    };
+  };
+}
  

@@ -433,7 +433,7 @@ export const AddConsignment: React.FC = () => {
                   Select any option
                 </option>
                 {statusArray.map((value, index) => (
-                  <option key={index} value={value._id}>
+                  <option key={index} value={index}>
                     {value}
                   </option>
                 ))}
@@ -449,7 +449,7 @@ export const AddConsignment: React.FC = () => {
             onClick={handlesubmit}
           >
             {" "}
-            Add User{" "}
+            Add Consignment{" "}
           </button>
         </div>
       </div>

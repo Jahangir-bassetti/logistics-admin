@@ -9,8 +9,11 @@ import { useNavigate } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import User from '../../interface/LoginInterface';
 
+interface User {
+  sEmail: string;
+  sPassword: string;
+}
 export const Login: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [user, setUser] = useState<User>({

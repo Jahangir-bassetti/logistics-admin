@@ -18,16 +18,16 @@ import { MyModal } from "../../../components/modal/deletemodal/DeleteModal";
 export const Customer: React.FC = () => {
   const [search, setSearch] = useState("");
   const [isLoading, setisLoading] = useState(true);
-  const [userData, setUserData] = useState<any[]>([]);
+  const [CustomerData, setCustomerData] = useState<any[]>([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [recordSize, setRecordSize] = useState(10);
   const [socket, setSocket] = useState<Socket | null>(null);
-  const totalPages = Math.ceil(userData.length / recordSize);
+  const totalPages = Math.ceil(CustomerData.length / recordSize);
   const apiUrl = process.env.REACT_APP_LOCAL_API_URL;
 
   const startIndex = currentPage * recordSize;
   const endIndex = startIndex + recordSize;
-  const currentItems = userData.slice(startIndex, endIndex);
+  const currentItems = CustomerData.slice(startIndex, endIndex);
   const [showModal, setShowModal] = useState<string | false>(false);
 
   useEffect(() => {
@@ -38,6 +38,7 @@ export const Customer: React.FC = () => {
     return () => {
       newSocket.disconnect();
     };
+     // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
@@ -46,6 +47,7 @@ export const Customer: React.FC = () => {
         loadData();
       });
     }
+     // eslint-disable-next-line
   }, [socket]);
 
   function loadData() {
@@ -54,7 +56,7 @@ export const Customer: React.FC = () => {
         return res.json();
       })
       .then((resp) => {
-        setUserData(resp ? resp.data : []);
+        setCustomerData(resp ? resp.data : []);
       })
       .catch((err) => {
         console.log(err.message);
@@ -252,6 +254,7 @@ export const Customer: React.FC = () => {
                             </th>
                           </tr>
                         </thead>
+                        { CustomerData.length>0 ? (
                         <tbody className="bg-tbody">
                           {currentItems
                             .filter((item) => {
@@ -287,7 +290,7 @@ export const Customer: React.FC = () => {
                                           : "secondary"
                                       }
                                       size="sm"
-                                      className="activeData"
+                                      className="activeData ms-1"
                                       onClick={() =>
                                         approvedStatus(item, item.bIsApproved)
                                       }
@@ -317,7 +320,7 @@ export const Customer: React.FC = () => {
                                         item.bIsActive ? "primary" : "secondary"
                                       }
                                       size="sm"
-                                      className="activeData"
+                                      className="activeData ms-1"
                                       onClick={() =>
                                         updateStatus(item._id, item.bIsActive)
                                       }
@@ -345,7 +348,7 @@ export const Customer: React.FC = () => {
                                     <Button
                                       variant="success"
                                       size="sm"
-                                      className=" editData"
+                                      className=" editData ms-1"
                                     >
                                       <FontAwesomeIcon
                                         icon={faEdit}
@@ -369,7 +372,11 @@ export const Customer: React.FC = () => {
                                 </tr>
                               );
                             })}
-                        </tbody>
+                        </tbody>):isLoading?null:(
+                          <tbody className="bg-tbody">
+                           <tr  style={{height: '10rem'}} className="notfound"><th colSpan={6}>No Records found</th></tr>
+                          </tbody>
+                        )}
                       </Table>
                       {isLoading ? (
                         <div
@@ -387,10 +394,10 @@ export const Customer: React.FC = () => {
                           aria-live="polite"
                         >
                           Showing {startIndex + 1} to{" "}
-                          {endIndex < userData.length
+                          {endIndex < CustomerData.length
                             ? endIndex
-                            : userData.length}{" "}
-                          of {userData.length} entries
+                            : CustomerData.length}{" "}
+                          of {CustomerData.length} entries
                         </div>
                         <div
                           className="dataTables_paginate paging_simple_numbers"

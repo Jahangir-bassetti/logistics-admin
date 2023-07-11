@@ -1,10 +1,62 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { EmployeeDetails, ErrorDetails, UserGroup, UserRole, ManageAccess, Branch, Department, Designation } from '../../../../interface/AddEmployeeInterface';
+
+interface EmployeeDetails {
+  sName: string;
+  sEmail: string;
+  aPhoneNo: string;
+  sPassword: string;
+  eGender: string;
+  dDob: string;
+  sPresentAddress: string;
+  tUserRole: string;
+  tUserGroup: string;
+  tManageAccess: string;
+  tBranch: string;
+  tDeptName: string;
+  tDesignation: string;
+}
+
+interface ErrorDetails {
+  email: string;
+  password: string;
+  required: string;
+}
+
+interface UserGroup {
+  _id: string;
+  sName: string;
+}
+
+interface UserRole {
+  _id: string;
+  sName: string;
+}
+
+interface ManageAccess {
+  _id: string;
+  sName: string;
+}
+
+interface Branch {
+  _id: string;
+  sName: string;
+}
+
+interface Department {
+  _id: string;
+  sName: string;
+}
+
+interface Designation {
+  _id: string;
+  sName: string;
+}
 
 export const AddEmployee: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);

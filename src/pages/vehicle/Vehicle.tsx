@@ -9,8 +9,16 @@ import { MyModal } from '../../components/modal/deletemodal/DeleteModal';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
-import { VehicleData } from '../../interface/VehicleInterface';
 
+interface VehicleData {
+  sPresentAddress: any;
+  _id: string;
+  sRegNo: string;
+  sName: string;
+  sModel: string;
+  sCompany: string;
+  aCapacity: string;
+}
 
 export const Vehicle: React.FC = () => {
   const [search, setSearch] = useState('');
@@ -241,6 +249,7 @@ export const Vehicle: React.FC = () => {
                       </th>
                     </tr>
                   </thead>
+                  { vehicleData.length>0 ? (
                   <tbody className="bg-tbody">
                     {
                       currentItems.filter((item)=>{
@@ -278,7 +287,11 @@ export const Vehicle: React.FC = () => {
                       </tr>)
                        })
                       }
-                  </tbody>
+                  </tbody>):isLoading?null:(
+                      <tbody className="bg-tbody">
+                      <tr  style={{height: '10rem'}} className="notfound"><th colSpan={6}>No Records found</th></tr>
+                     </tbody>
+                  )}
                 </Table></div>
                 {isLoading?<div className="d-flex justify-content-center align-items-center" style={{height:'20vh'}}>
                       <Spinner animation="border" variant="primary" />

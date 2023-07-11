@@ -7,8 +7,14 @@ import { useDispatch } from 'react-redux';
 import { signOut } from '../../redux/auth/authSlice';
 import { useNavigate } from 'react-router-dom';
 import MenuIcon from '@material-ui/icons/Menu';
-import HeaderProps from '../../interface/HeaderInterface';
 
+interface HeaderProps {
+  isOpen: {
+    currentValue: boolean;
+    isBtnOpen: boolean;
+  };
+  toggleSidebar: () => void;
+};
 export const Header: React.FC<HeaderProps> = (props) => {
   const [show, setShow] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);

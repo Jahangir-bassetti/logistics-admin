@@ -13,7 +13,16 @@ import axios from "axios";
 import { MyModal } from "../../../components/modal/deletemodal/DeleteModal";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import EmployeeData from "../../../interface/EmployeeInterface";
+
+interface EmployeeData {
+  _id: string;
+  sName: string;
+  tUserRole: string[];
+  sEmail: string;
+  aPhoneNo: string;
+  sPresentAddress: string;
+  bIsActive: boolean;
+}
 
 export const Employee: React.FC = () => {
   const [search, setSearch] = useState("");
@@ -247,6 +256,7 @@ export const Employee: React.FC = () => {
                                                 </th>
                                             </tr>
                                         </thead>
+                                        {empData.length>0 ? (
                                         <tbody className='bg-tbody'>
                                             {currentItems
                                                 .filter((item) => {
@@ -280,7 +290,7 @@ export const Employee: React.FC = () => {
                                                                 <Button
                                                                     variant="success"
                                                                     size="sm"
-                                                                    className="activeData"
+                                                                    className="activeData ms-1"
                                                                     onClick={() => editEmployee(item._id)}
                                                                 >
                                                                     <FontAwesomeIcon icon={faEdit} color="white" /> <span>Edit</span>
@@ -300,7 +310,11 @@ export const Employee: React.FC = () => {
                                                         </tr>
                                                     );
                                                 })}
-                                        </tbody>
+                                        </tbody>) :isLoading?null: (
+                                             <tbody className="bg-tbody">
+                                             <tr  style={{height: '10rem'}} className="notfound"><th colSpan={7}>No Records found</th></tr>
+                                           </tbody>
+                                        )}
                                     </Table>
                                     {isLoading?<div className="d-flex justify-content-center align-items-center" style={{height:'20vh'}}>
                                         <Spinner animation="border" variant="primary" />
@@ -316,10 +330,11 @@ export const Employee: React.FC = () => {
                                             {endIndex < empData.length ? endIndex : empData.length} of{' '}
                                             {empData.length} entries
                                         </div>
+                                     {empData.length>0 ? (
                                         <div
                                             className='dataTables_paginate paging_simple_numbers'
                                             id='DataTables_Table_0_paginate'
-                                        >
+                                        >                                          
                                             <Button
                                                 className='paginate_button previous me-2'
                                                 aria-controls='DataTables_Table_0'
@@ -342,7 +357,7 @@ export const Employee: React.FC = () => {
                                                 >
                                                     {currentPage + 1}
                                                 </Button>
-                                            </span>
+                                            </span>                                           
                                             <Button
                                                 className='paginate_button next ms-2'
                                                 aria-controls='DataTables_Table_0'
@@ -356,7 +371,44 @@ export const Employee: React.FC = () => {
                                             >
                                                 Next
                                             </Button>
+                                        </div>):(
+                                            <div
+                                            className='dataTables_paginate paging_simple_numbers'
+                                            id='DataTables_Table_0_paginate'
+                                        >                                          
+                                            <Button
+                                                className='paginate_button previous me-2'
+                                                aria-controls='DataTables_Table_0'
+                                                data-dt-idx={0}
+                                                tabIndex={-1}
+                                                id='DataTables_Table_0_previous'
+                                                disabled
+                                            >
+                                                Previous
+                                            </Button>
+                                            <span>
+                                                <Button
+                                                    className='paginate_button-current'
+                                                    aria-controls='DataTables_Table_0'
+                                                    data-dt-idx={1}
+                                                    tabIndex={0}
+                                                >
+                                                    {currentPage + 1}
+                                                </Button>
+                                            </span>
+                                           
+                                            <Button
+                                                className='paginate_button next ms-2'
+                                                aria-controls='DataTables_Table_0'
+                                                data-dt-idx={2}
+                                                tabIndex={-1}
+                                                id='DataTables_Table_0_next'
+                                               disabled
+                                            >
+                                                Next
+                                            </Button>
                                         </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>

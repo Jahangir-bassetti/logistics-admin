@@ -20,13 +20,13 @@ export const Inventory: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const paginateArray = (pageNumber: any) => {
+  const paginateArray = (pageNumber:any) =>{
     if (pageNumber >= 0 && pageNumber < totalPages) {
       setCurrentPage(pageNumber);
     }
   };
 
-  const data = [
+  const  data = [
     {
       "Item_No_": "FG-0001",
       "Lot_No_": "01072022",
@@ -36,8 +36,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "01112022-08",
       "Location_Code": "QUALITY W",
@@ -46,8 +46,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "01112022-09",
       "Location_Code": "NHR4-DMG",
@@ -56,8 +56,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "01112022-09",
       "Location_Code": "NUP1",
@@ -66,8 +66,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "01112022-QCA",
       "Location_Code": "IN-TRANSIT",
@@ -76,8 +76,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "02032023",
       "Location_Code": "QUALITY W",
@@ -86,8 +86,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "02032023 09",
       "Location_Code": "STG1",
@@ -96,8 +96,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "02032023 10",
       "Location_Code": "STG1",
@@ -106,8 +106,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "02122021",
       "Location_Code": "IN-TRANSIT",
@@ -116,8 +116,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "02122021 DAMAGE",
       "Location_Code": "SKR1",
@@ -126,8 +126,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "02122021 DAMAGE",
       "Location_Code": "WGJ1",
@@ -136,8 +136,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "03012023 QCA",
       "Location_Code": "QUALITY W",
@@ -146,8 +146,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "03032023",
       "Location_Code": "QUALITY W",
@@ -156,8 +156,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04012023 QCA",
       "Location_Code": "QUALITY W",
@@ -166,8 +166,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04032023",
       "Location_Code": "QUALITY W",
@@ -176,8 +176,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04032023 01",
       "Location_Code": "FG SABR",
@@ -186,8 +186,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04032023 01",
       "Location_Code": "SKR1",
@@ -196,8 +196,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04032023 01",
       "Location_Code": "WMH1",
@@ -206,8 +206,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04032023 01",
       "Location_Code": "WMH2",
@@ -216,8 +216,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04072020",
       "Location_Code": "PROD W",
@@ -226,8 +226,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04072022- 07",
       "Location_Code": "NHR4-DMG",
@@ -236,8 +236,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04072022- 07",
       "Location_Code": "WMH1-DMG",
@@ -246,8 +246,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04072022- 09",
       "Location_Code": "SKR1-DMG",
@@ -256,8 +256,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "04072022- 10",
       "Location_Code": "NHR4-DMG",
@@ -266,8 +266,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "05072022-08",
       "Location_Code": "NHR4-DMG",
@@ -276,8 +276,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "05072022-08",
       "Location_Code": "WMH1-DMG",
@@ -286,8 +286,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "05072022-10",
       "Location_Code": "WMH1-DMG",
@@ -296,8 +296,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "05082022",
       "Location_Code": "NHR4-DMG",
@@ -306,8 +306,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "05082022-03",
       "Location_Code": "NHR4-DMG",
@@ -316,8 +316,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "05082022-08",
       "Location_Code": "NHR7-HOLD",
@@ -326,8 +326,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "05102020",
       "Location_Code": "PROD W",
@@ -336,8 +336,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "05102022-13L2",
       "Location_Code": "NHR4-DMG",
@@ -346,8 +346,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "05102022-QCA",
       "Location_Code": "IN-TRANSIT",
@@ -356,8 +356,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-10",
       "Location_Code": "EWB2",
@@ -366,8 +366,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-11",
       "Location_Code": "NHR7-HOLD",
@@ -376,8 +376,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-12",
       "Location_Code": "NHR7-HOLD",
@@ -386,8 +386,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-13",
       "Location_Code": "NHR7-HOLD",
@@ -396,8 +396,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-14",
       "Location_Code": "NHR7-HOLD",
@@ -406,8 +406,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-15",
       "Location_Code": "NHR7-HOLD",
@@ -416,8 +416,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-16",
       "Location_Code": "NHR7-HOLD",
@@ -426,8 +426,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-17",
       "Location_Code": "NHR7-HOLD",
@@ -436,8 +436,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-18",
       "Location_Code": "NHR7-HOLD",
@@ -446,8 +446,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-19",
       "Location_Code": "NHR4-DMG",
@@ -456,8 +456,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-19",
       "Location_Code": "NHR7-HOLD",
@@ -466,8 +466,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-20",
       "Location_Code": "NHR4-DMG",
@@ -476,8 +476,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-21",
       "Location_Code": "NHR4-DMG",
@@ -486,8 +486,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-22",
       "Location_Code": "NHR4-DMG",
@@ -496,8 +496,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-23",
       "Location_Code": "NHR4-DMG",
@@ -506,8 +506,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-24",
       "Location_Code": "NHR4-DMG",
@@ -516,8 +516,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-25",
       "Location_Code": "NHR4-DMG",
@@ -526,8 +526,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06092022-26",
       "Location_Code": "NHR4-DMG",
@@ -536,8 +536,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06112022",
       "Location_Code": "QUALITY W",
@@ -546,8 +546,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06112022-13",
       "Location_Code": "WIP ROSHAN",
@@ -556,8 +556,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "06112022-QCA",
       "Location_Code": "IN-TRANSIT",
@@ -566,8 +566,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "07022023",
       "Location_Code": "QUALITY W",
@@ -576,8 +576,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "07042022-QCA",
       "Location_Code": "NHR3-DMG",
@@ -586,8 +586,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "07092020",
       "Location_Code": "PROD W",
@@ -596,8 +596,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "07112022",
       "Location_Code": "QUALITY W",
@@ -606,8 +606,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "07122021",
       "Location_Code": "IN-TRANSIT",
@@ -616,8 +616,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "08022022 DAMAGE",
       "Location_Code": "SKR1",
@@ -626,8 +626,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09072022",
       "Location_Code": "NHR4-DMG",
@@ -636,8 +636,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09072022",
       "Location_Code": "NHR7-HOLD",
@@ -646,8 +646,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09072022-04",
       "Location_Code": "NHR4-DMG",
@@ -656,8 +656,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09072022-05",
       "Location_Code": "NHR4-DMG",
@@ -666,8 +666,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09072022-06",
       "Location_Code": "NHR4-DMG",
@@ -676,8 +676,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09072022-07",
       "Location_Code": "NHR4-DMG",
@@ -686,8 +686,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09072022-08",
       "Location_Code": "NHR4-DMG",
@@ -696,8 +696,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09072022-13",
       "Location_Code": "NHR4-DMG",
@@ -706,8 +706,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09072022-14",
       "Location_Code": "NHR4-DMG",
@@ -716,8 +716,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09072022-15",
       "Location_Code": "WMH1-DMG",
@@ -726,8 +726,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09082022-06",
       "Location_Code": "NHR3-DMG",
@@ -736,8 +736,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09082022-06",
       "Location_Code": "NHR7-HOLD",
@@ -746,8 +746,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09082022-15",
       "Location_Code": "NHR7-HOLD",
@@ -756,8 +756,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09102020",
       "Location_Code": "PROD W",
@@ -766,8 +766,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09112022",
       "Location_Code": "QUALITY W",
@@ -776,8 +776,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09112022-08",
       "Location_Code": "WIP ROSHAN",
@@ -786,8 +786,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "09112022-QCA",
       "Location_Code": "IN-TRANSIT",
@@ -796,8 +796,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "10062022-07",
       "Location_Code": "NHR4-DMG",
@@ -806,8 +806,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "11012022 DAMAGE",
       "Location_Code": "SKR1",
@@ -816,8 +816,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "11032023",
       "Location_Code": "QUALITY W",
@@ -826,8 +826,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "11032023-04",
       "Location_Code": "STG1",
@@ -836,8 +836,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "11032023-05",
       "Location_Code": "STG1",
@@ -846,8 +846,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "11032023-05",
       "Location_Code": "WGJ2",
@@ -856,8 +856,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "11032023-06",
       "Location_Code": "WGJ2",
@@ -866,8 +866,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "11032023-06",
       "Location_Code": "WMH3",
@@ -876,8 +876,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "11032023-07",
       "Location_Code": "WMH3",
@@ -886,8 +886,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "11102020",
       "Location_Code": "PROD W",
@@ -896,8 +896,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "11102021 DAMAGE",
       "Location_Code": "NHR3-DMG",
@@ -906,8 +906,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12022023",
       "Location_Code": "QUALITY W",
@@ -916,8 +916,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12022023-02",
       "Location_Code": "SKR1-DMG",
@@ -926,8 +926,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12022023-02",
       "Location_Code": "WGJ2",
@@ -936,8 +936,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023",
       "Location_Code": "IN-TRANSIT",
@@ -946,8 +946,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-01",
       "Location_Code": "NHR4",
@@ -956,8 +956,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-02",
       "Location_Code": "NHR4",
@@ -966,8 +966,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-02",
       "Location_Code": "NHR7",
@@ -976,8 +976,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-03",
       "Location_Code": "IN-TRANSIT",
@@ -986,8 +986,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-03",
       "Location_Code": "NHR7",
@@ -996,8 +996,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-04",
       "Location_Code": "NHR7",
@@ -1006,8 +1006,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-05",
       "Location_Code": "NHR7",
@@ -1016,8 +1016,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-06",
       "Location_Code": "NHR7",
@@ -1026,8 +1026,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-07",
       "Location_Code": "NHR7",
@@ -1036,8 +1036,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-08",
       "Location_Code": "NHR7",
@@ -1046,8 +1046,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-09",
       "Location_Code": "NHR7",
@@ -1056,8 +1056,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-10",
       "Location_Code": "NHR7",
@@ -1066,8 +1066,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-11",
       "Location_Code": "NHR7",
@@ -1076,8 +1076,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-12",
       "Location_Code": "NHR7",
@@ -1086,8 +1086,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12042023-13",
       "Location_Code": "NHR7",
@@ -1096,8 +1096,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12092022-06",
       "Location_Code": "NHR4-DMG",
@@ -1106,8 +1106,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12092022-07",
       "Location_Code": "NHR4-DMG",
@@ -1116,8 +1116,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12092022-08",
       "Location_Code": "NHR4-DMG",
@@ -1126,8 +1126,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12092022-08",
       "Location_Code": "QUALITY W",
@@ -1136,8 +1136,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12092022-10",
       "Location_Code": "EWB2",
@@ -1146,8 +1146,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12092022-10",
       "Location_Code": "NHR7-HOLD",
@@ -1156,8 +1156,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12092022-11",
       "Location_Code": "NHR7-HOLD",
@@ -1166,8 +1166,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12092022-12",
       "Location_Code": "NHR7-HOLD",
@@ -1176,8 +1176,8 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
-    {
+  },
+  {
       "Item_No_": "FG-0001",
       "Lot_No_": "12092022-13",
       "Location_Code": "NHR7-HOLD",
@@ -1186,8 +1186,9 @@ export const Inventory: React.FC = () => {
       "Description": "NDW- Vegetable Topping Whipo Star",
       "Location_FilterOnly": null,
       "ItemNo_FilterOnly": null
-    },
+  },
   ];
+
 
   return (
     <>
@@ -1254,7 +1255,7 @@ export const Inventory: React.FC = () => {
                           <input
                             type="search"
                             className="table-input"
-                            placeholder="search name..."
+                            placeholder="search Lot No..."
                             aria-controls="DataTables_Table_0"
                             onChange={(e) => setSearch(e.target.value)}
                           />
@@ -1291,7 +1292,7 @@ export const Inventory: React.FC = () => {
                               colSpan={1}
                               aria-label="Page Title: activate to sort column ascending"
                             >
-                              Lot No
+                            Lot No
                             </th>
                             <th
                               className="sorting"
@@ -1311,7 +1312,7 @@ export const Inventory: React.FC = () => {
                               colSpan={1}
                               aria-label="Position: activate to sort column ascending"
                             >
-                              Expiration Date
+                             Expiration Date
                             </th>
                             <th
                               className="sorting"
@@ -1321,7 +1322,7 @@ export const Inventory: React.FC = () => {
                               colSpan={1}
                               aria-label="Position: activate to sort column ascending"
                             >
-                              Quantity
+                            Quantity
                             </th>
                             <th
                               className="sorting "
@@ -1331,20 +1332,21 @@ export const Inventory: React.FC = () => {
                               colSpan={1}
                               aria-label="Position: activate to sort column ascending"
                             >
-                              Description
-                            </th>
+                             Description
+                            </th>  
                           </tr>
                         </thead>
+                        { inventoryData.length>0 ? (
                         <tbody className="bg-tbody">
-                          {currentItems
-                            .filter((item) => {
-                              return search.toLowerCase() === " "
+                           { currentItems 
+                            .filter((item) => {                             
+                              return  search.toLowerCase() === " "
                                 ? item
                                 : (item.Lot_No_ ? item.Lot_No_ : "")
-                                  .toLowerCase()
-                                  .includes(search);
-                            })
-                            .map((item, index) => {
+                                    .toLowerCase()
+                                    .includes(search);
+                            }) 
+                           .map((item, index) => {
                               return (
                                 <tr role="row" className="odd" key={index}>
                                   {/* <td className="sorting_1">{index + 1}</td> */}
@@ -1363,12 +1365,16 @@ export const Inventory: React.FC = () => {
                                     {item.Description
                                       ? item.Description
                                       : "----"}
-                                  </td>
-
+                                  </td>  
+                               
                                 </tr>
                               );
                             })}
-                        </tbody>
+                        </tbody>):isLoading?null:(
+                            <tbody className="bg-tbody">
+                            <tr  style={{height: '10rem'}} className="notfound"><th colSpan={6}>No Records found</th></tr>
+                           </tbody>
+                        )}
                       </Table>
 
                       {isLoading ? (
@@ -1378,7 +1384,7 @@ export const Inventory: React.FC = () => {
                         >
                           <Spinner animation="border" variant="primary" />
                         </div>
-                      ) : null}
+                       ) : null} 
                       <div className="d-flex justify-content-between align-items-center">
                         <div
                           className="dataTables_info"
